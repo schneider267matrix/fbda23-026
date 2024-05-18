@@ -1,0 +1,214 @@
+
+  
+li {
+    float: left;
+  }
+  
+  li a {
+    display: inline;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+header {
+    background-color: #638CB3;
+    color: white;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.container {
+    padding: 2rem;
+    width: auto;
+    margin: 0 auto;
+}
+/* Styles for tablets */
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+    }
+}
+
+/* Styles for smartphones */
+@media (max-width: 480px) {
+    .container {
+        width: auto;
+    }
+
+.card {
+    margin: 1rem 0;
+}
+ 
+/* styles.css */
+.hero {
+    background: url('images/Warner Bros.jpg') no-repeat center center;
+    background-size: cover;
+    height: 750px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.5rem;
+}
+.navbar-nav .nav-item .nav-link {
+    margin-right: 62px;
+}
+.navbar-nav .form-inline {
+    display: flex;
+    align-items: center;
+    margin-left: 2px; /* Add space between feedback link and search bar */
+}
+.navbar-nav .form-inline input[type="search"] {
+    width: 1700px; /* Extend the width of the search bar */
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+.navbar-nav .form-inline button {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+.navbar-nav .form-inline button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #b5b2d4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #65656b, #0f0c29); 
+ 
+}
+
+.login-container {
+    perspective: 1000px;
+}
+
+.login-box {
+    width: 400px;
+    padding: 40px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: rotateY(20deg);
+    transition: transform 0.5s;
+}
+
+.login-box:hover {
+    transform: rotateY(0deg);
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s;
+}
+
+button:hover {
+    color: #03e9f4;
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #03e9f4;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+button:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.option {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.option a {
+    color: #03e9f4;
+    text-decoration: none;
+}
+
+.option a:hover {
+    text-decoration: underline;
+}
