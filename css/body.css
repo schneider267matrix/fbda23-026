@@ -1,6 +1,9 @@
-
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
   
-l
+
 header {
     background-color: #638CB3;
     color: white;
@@ -23,12 +26,19 @@ nav a {
     .container {
         width: auto;
     }
+  .carousel-item {
+        flex-direction: column;
+    }
 }
 
 /* Styles for smartphones */
 @media (max-width: 480px) {
     .container {
         width: auto;
+    }
+      .carousel-item {
+        flex-direction: column;
+    }
     }
 
 .card {
