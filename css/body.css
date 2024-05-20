@@ -47,10 +47,8 @@ nav a {
     margin: 1rem 0;
 }
  
-/* styles.css */
+
 .hero {
-    background: url('images/Warner Bros.jpg') no-repeat center center;
-    background-size: cover;
     height: 750px;
     color: white;
     text-align: center;
@@ -71,7 +69,7 @@ nav a {
 .navbar-nav .form-inline {
     display: flex;
     align-items: center;
-    margin-left: 2px; /* Add space between feedback link and search bar */
+    margin-left: 2px; 
 }
 .navbar-nav .form-inline input[type="search"] {
     width: 1700px; /* Extend the width of the search bar */
@@ -96,8 +94,8 @@ nav a {
 body {
     margin: 0;
     padding: 0;
-    background: #b5b2d4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #b5b2d4; 
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
     background: linear-gradient(to right, #24243e, #65656b, #0f0c29); 
  
 }
