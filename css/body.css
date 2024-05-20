@@ -225,5 +225,68 @@ button:hover:before {
 }
 
 
+/* Flexbox for the footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Styling for the About Us section */
+.footer-about {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-about h5 {
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    margin-bottom: 0;
+}
+
+/* Styling for the Contact Us section */
+.footer-contact {
+    text-align: right;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.footer-contact h5 {
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin-left: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 5px;
+}
+
+/* Ensure text is left-aligned for About Us and right-aligned for Contact Us */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Center the copyright notice */
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+
 
 
