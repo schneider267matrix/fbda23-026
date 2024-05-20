@@ -223,3 +223,9 @@ button:hover:before {
 .embed-responsive video {
     border-radius: 10px;
 }
+
+
+.footer-text-left {
+    text-align: left;
+}
+
