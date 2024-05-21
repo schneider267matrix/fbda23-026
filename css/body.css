@@ -96,8 +96,7 @@ body {
     padding: 0;
     background: #b5b2d4; 
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-    background: linear-gradient(to right,  #111120ce, #585860, #1e1e22)
-}
+    background: linear-gradient(to right,#1b1b2e, #59595d, #1c1c24)
 
 .login-container {
     perspective: 1000px;
