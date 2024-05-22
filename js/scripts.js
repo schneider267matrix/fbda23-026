@@ -22,20 +22,16 @@ document.addEventListener('DOMContentLoaded', function () {
             valid = false;
         }
 
-        if (!validateEmail(emailValue)) {
+        if (emailValue === '') {
+            showError(emailInput, 'Email is required');
+            valid = false;
+        } else if (!validateEmail(emailValue)) {
             showError(emailInput, 'Invalid email format');
             valid = false;
         }
 
         if (messageValue === '') {
             showError(messageInput, 'Message is required');
-            valid = false;
-        }
-
-        // Check if only one input is filled
-        const filledInputs = [nameValue, emailValue, messageValue].filter(value => value !== '').length;
-        if (filledInputs === 1) {
-            showError(form, 'Please fill in at least two fields.');
             valid = false;
         }
 
