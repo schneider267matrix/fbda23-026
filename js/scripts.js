@@ -13,18 +13,29 @@ document.addEventListener('DOMContentLoaded', function () {
         // Validate inputs
         let valid = true;
 
-        if (nameInput.value.trim() === '') {
+        const nameValue = nameInput.value.trim();
+        const emailValue = emailInput.value.trim();
+        const messageValue = messageInput.value.trim();
+
+        if (nameValue === '') {
             showError(nameInput, 'Name is required');
             valid = false;
         }
 
-        if (!validateEmail(emailInput.value)) {
+        if (!validateEmail(emailValue)) {
             showError(emailInput, 'Invalid email format');
             valid = false;
         }
 
-        if (messageInput.value.trim() === '') {
+        if (messageValue === '') {
             showError(messageInput, 'Message is required');
+            valid = false;
+        }
+
+        // Check if only one input is filled
+        const filledInputs = [nameValue, emailValue, messageValue].filter(value => value !== '').length;
+        if (filledInputs === 1) {
+            showError(form, 'Please fill in at least two fields.');
             valid = false;
         }
 
